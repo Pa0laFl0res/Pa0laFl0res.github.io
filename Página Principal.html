@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout y Rutas</title>
+    <style>
+    * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Estilo de header */
+        
+        header {
+            background-image: url("../Img/Picture\ 1.jpg");
+            background-size: 60;
+            background-color: rgb(29, 10, 37);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(245, 236, 247);
+        }
+        /* Crear 2 columnas con la misma posición en la fila */
+        
+        nav {
+            background-image: url("./PesteleriaLogo.jpg");
+            /* background-size: 70;*/
+            float: left;
+            width: 30%;
+            height: 200px;
+            /* only for demonstration, should be removed 
+            background: rgb(71, 26, 129);*/
+            padding: 20px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        article {
+            background-image: url("../Img/Fondo\ 2.png");
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #ad7cb6;
+            height: 200px;
+        }
+        /* Clear floats after the columns */
+        
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Estilo de footer */
+    }
+    footer {
+        background-image: url("../Img/Picture\ 1.jpg");
+        background-size: 70 background-color: rgb(106, 56, 116);
+        padding: 10px;
+        text-align: center;
+        color: rgb(166, 126, 189);
+    }
+    /* Responsive layout */
+    @media (max-width: 600px) {
+        nav,
+        article {
+            width: 100%;
+            height: auto;
+        }
+    }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>PESTELERÍA</h1>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>A que regresas por más</h1>
+            <p>No sólo son una maravilla de diseño, están deliciosos, tú también puede diseñar tu propio pastel</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Realiza el pedido a tu gusto, sólo da click en la parte inferior de esta página</p>
+    </footer>
+
+    <a href="./Pestelería.html">
+        <button>Hacer compra</button>
+    </a>
+
+</body>
+
+</html>

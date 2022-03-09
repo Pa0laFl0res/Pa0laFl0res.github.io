@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta https-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pestelería</title>
+
+    <style>
+        * {
+            font-family: Georgia, Times New Roman, Times, serif;
+        }
+        
+        body {
+            background-color: rgb(150, 130, 168);
+        }
+        
+        p {
+            color: rgb(2, 2, 2);
+            text-align: left;
+        }
+        
+        #título {
+            color: rgb(rgb(78, 16, 73), rgb(121, 28, 184), rgb(100, 17, 110))
+        }
+        
+        .izquierda {
+            color: blueviolet;
+        }
+        
+        p.izquierda {
+            text-decoration: dotted;
+            text-align: justify;
+        }
+        
+        .contraste {
+            background-color: black;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <h1>Realiza tu pedido</h1>
+
+    <p>regresar a menú</p>
+    <a href="./Pestelería.html">
+        <button>Quiero ver el menú de nuevo</button>
+    </a>
+
+
+    <br><br>
+
+
+    <form action="pedido.js">
+        <label for="Nombre">Proporciona tu nombre</label><br>
+        <input type="text" id="Nombre" placeholder="Nombre">
+
+
+        <br><br>
+
+
+
+        <p>¿Entrega a domicilio or Pickup?</p>
+        <input type="radio" id="Pickup" name="Deliverorpickup" value="Pickup">
+        <label for="Pickup">Pickup</label><br>
+        <input type="radio" id="domicilio" name="Deliverorpickup" value="domicilio">
+        <label for="domicilio">domicilio</label><br>
+        <input type="text" id="domicilio" placeholder="domicilio">
+
+
+
+        <br><br>
+
+
+
+
+        <p>Escoge tu pestel</p>
+        <input type="checkbox" id="Peste Bubónica" name="Peste Bubónica" value="Peste Bubónica">
+        <label for="Peste Bubónica">Peste Bubónica</label>
+        <select name="Sabores" id="Sabores">
+            <option value="Chocolate">Chocolate</option>
+            <option value="Menta">Menta</option>
+            <option value="Fresa">Fresa</option>
+            <option value="Plátano">Plátano</option>
+            <option value="Napolitano">Napolitano</option>
+        </select>
+        <select name="Harina" id="Harina">
+            <option value="Normal">Normal</option>
+            <option value="Integral">Integral</option>
+            <option value="Veggies">Veggies</option>
+        </select>
+        <input type="number" id="PesteBubónicaCuántos" name="PesteBubónicaCuántos" placeholder="¿Cuántos?"><br>
+        <input type="checkbox" id="Peste Oceánica" name="Peste Oceánica" value="Peste Oceánica">
+        <label for="Peste Oceánica">Peste Oceánica</label>
+        <select name="Sabores" id="Sabores">
+            <option value="Chocolate">Chocolate</option>
+            <option value="Menta">Menta</option>
+            <option value="Fresa">Fresa</option>
+            <option value="Plátano">Plátano</option>
+            <option value="Napolitano">Napolitano</option>
+        </select>
+        <select name="Harina" id="Harina">
+            <option value="Normal">Normal</option>
+            <option value="Integral">Integral</option>
+            <option value="Veggies">Veggies</option>
+        </select>
+        <input type="number" id="PesteOceánicaCuántos" name="PesteOceánicaCuántos" placeholder="¿Cuántos?"><br>
+        <input type="checkbox" id="Peste Floral" name="Peste Floral" value="Peste Floral">
+        <label for="Peste Floral">Peste Floral</label>
+        <select name="Sabores" id="Sabores">
+            <option value="Chocolate">Chocolate</option>
+            <option value="Menta">Menta</option>
+            <option value="Fresa">Fresa</option>
+            <option value="Plátano">Plátano</option>
+            <option value="Napolitano">Napolitano</option>
+        </select>
+        <select name="Harina" id="Harina">
+            <option value="Normal">Normal</option>
+            <option value="Integral">Integral</option>
+            <option value="Veggies">Veggies</option>
+        </select>
+        <input type="number" id="PesteFloralCuántos" name="PesteFloralCuántos" placeholder="¿Cuántos?"><br>
+        <input type="checkbox" id="Peste Pandámico" name="Peste Pandámico" value="Peste Pandámica">
+        <label for="Peste Pandámico">Peste Pandámico</label>
+        <select name="Sabores" id="Sabores">
+            <option value="Chocolate">Chocolate</option>
+            <option value="Menta">Menta</option>
+            <option value="Fresa">Fresa</option>
+            <option value="Plátano">Plátano</option>
+            <option value="Napolitano">Napolitano</option>
+        </select>
+        <select name="Harina" id="Harina">
+            <option value="Normal">Normal</option>
+            <option value="Integral">Integral</option>
+            <option value="Veggies">Veggies</option>
+        </select>
+        <input type="number" id="PestePandámicoCuántos" name="PestePandámicoCuántos" placeholder="¿Cuántos?"><br>
+        <input type="checkbox" id="Peste Literaria" name="Peste Literaria" value="Peste Literaria">
+        <label for="Peste Literaria">Peste Literaria</label>
+        <select name="Sabores" id="Sabores">
+            <option value="Chocolate">Chocolate</option>
+            <option value="Menta">Menta</option>
+            <option value="Fresa">Fresa</option>
+            <option value="Plátano">Plátano</option>
+            <option value="Napolitano">Napolitano</option>
+        </select>
+        <select name="Harina" id="Harina">
+            <option value="Normal">Normal</option>
+            <option value="Integral">Integral</option>
+            <option value="Veggies">Veggies</option>
+        </select>
+        <input type="number" id="PesteLiterariaCuántos" name="PesteLiterariaCuántos" placeholder="¿Cuántos?"><br>
+        <input type="checkbox" id="Peste Iceberg" name="Peste Iceberg" value="Peste Iceberg">
+        <label for="Peste Iceberg">Peste Iceberg</label>
+        <select name="Sabores" id="Sabores">
+            <option value="Chocolate">Chocolate</option>
+            <option value="Menta">Menta</option>
+            <option value="Fresa">Fresa</option>
+            <option value="Plátano">Plátano</option>
+            <option value="Napolitano">Napolitano</option>
+        </select>
+        <select name="Harina" id="Harina">
+            <option value="Normal">Normal</option>
+            <option value="Integral">Integral</option>
+            <option value="Veggies">Veggies</option>
+        </select>
+        <input type="number" id="PesteIcebergCuántos" name="PesteCuántos" placeholder="¿Cuántos?">
+        <br><br>
+
+        <p>Si decide mezcla, ¿qué mezcla quiere ser?</p>
+        <select name="Mezcla" id="Mezcla">
+                <option value="Chocolate">Chocolate</option>
+                <option value="Vainilla">Vainilla</option>
+                <option value="Fresa">Fresa</option>
+                <option value="Menta">Menta</option>
+        </select>
+        <select name="Mezcla" id="Mezcla">
+            <option value=" Chocolate">Chocolate</option>
+            <option value="Vainilla">Vainilla</option>
+            <option value="Fresa">Fresa</option>
+            <option value="Menta">Menta</option>
+        </select>
+        <input type="text" id="especifique el pastel y la harina" name="especifique el pastel y la harina" value="especifique el pastel y la harina">
+        <input type="number" id="PesteIcebergCuántos" name="PesteCuántos" placeholder="¿Cuántos?">
+
+
+        <br><br>
+
+
+    </form>
+
+    <p>¿Quieres crear tu propio diseño?</p>
+    <a href="./Diseñetupestel.html">
+        <button>Quiero diseñar mi pestel</button>
+    </a>
+
+    <br><br>
+
+
+    <p>¿Listo?</p>
+    <button type="button" onclick="alert('Pedido enviado');">Enviar Pedido</button>
+
+    <button type="reset">Borrar datos</button>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta https-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de Materiales Faltantes</title>
+
+    <style>
+        * {
+            font-family: Georgia, Times New Roman, Times, serif;
+        }
+        
+        body {
+            background-color: rgb(106, 140, 202);
+        }
+        
+        p {
+            color: rgb(2, 2, 2);
+            text-align: left;
+        }
+        
+        #título {
+            color: rgb(rgb(45, 128, 131), rgb(27, 79, 121), rgb(90, 151, 201))
+        }
+        
+        .izquierda {
+            color: rgb(163, 196, 235);
+        }
+        
+        p.izquierda {
+            text-decoration: dotted;
+            text-align: justify;
+        }
+        
+        .contraste {
+            background-color: black;
+        }
+        
+        h1 {
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        img {
+            display: block;
+            margin: auto
+        }
+        
+        table,
+        th,
+        td {
+            border: 2px solid black;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1>Inventario</h1>
+    <p>Respostero encargado de verificar los siguientes materiales, los insumos seleccionados son los faltantes, favor de complementarlos</p>
+    <p>Más adelante se le mostrara los precios de estos.</p>
+
+    <br>
+    <h2><strong>Materiales</strong></h2>
+
+
+    <h4><strong>Saborizantes</strong></h4>
+    <input type="checkbox" id="saborizantes1" name="saborizante1" checked>
+    <label for="saborizante1">Chcoloate</label><br>
+    <input type="checkbox" id="saborizantes2" name="saborizante2">
+    <label for="saborizante2">Fresa</label><br>
+    <input type="checkbox" id="saborizantes3" name="saborizante3" checked>
+    <label for="saborizante3">Vainilla</label><br>
+    <input type="checkbox" id="saborizantes4" name="saborizante4">
+    <label for="saborizante4">Menta</label><br>
+    <input type="checkbox" id="saborizantes5" name="saborizante5">
+    <label for="saborizante5">Napolitano</label><br>
+    <input type="checkbox" id="saborizantes6" name="saborizante6">
+    <label for="saborizante6">Plátano</label><br>
+
+    <br><br>
+
+    <h4><strong>Harinas</strong></h4>
+    <input type="checkbox" id="harina1" name="harina1" checked>
+    <label for="harina1">Normal</label><br>
+    <input type="checkbox" id="harina2" name="harina2" checked>
+    <label for="harina2">Integral</label><br>
+    <input type="checkbox" id="harina3" name="harina3">
+    <label for="harina3">Harina para veggies</label><br>
+
+    <br><br>
+
+    <h4><strong>Ingredientes generales</strong></h4>
+    <input type="checkbox" id="Ingredientes1" name="Ingredientes1" checked>
+    <label for="Ingredientes1">Mantequilla</label><br>
+    <input type="checkbox" id="Ingredientes2" name="Ingredientes2" checked>
+    <label for="Ingredientes2">Leche</label><br>
+    <input type="checkbox" id="Ingredientes3" name="Ingredientes3">
+    <label for="Ingredientes3">Philadelphia</label><br>
+    <input type="checkbox" id="Ingredientes4" name="Ingredientes4" checked>
+    <label for="Ingredientes4">Nuez</label><br>
+    <input type="checkbox" id="Ingredientes5" name="Ingredientes5" checked>
+    <label for="Ingredientes5">Fresas</label><br>
+    <input type="checkbox" id="Ingredientes6" name="Ingredientes6">
+    <label for="Ingredientes6">Mango</label><br>
+    <input type="checkbox" id="Ingredientes7" name="Ingredientes7" checked>
+    <label for="Ingredientes7">Azúcar glas</label><br>
+    <input type="checkbox" id="Ingredientes8" name="Ingredientes8" checked>
+    <label for="Ingredientes8">Azúcar mascabada</label><br>
+    <input type="checkbox" id="Ingredientes9" name="Ingredientes9" checked>
+    <label for="Ingredientes9">Esencia de Almendra</label><br>
+
+    <br><br>
+
+
+    <h4><strong>Adornos</strong></h4>
+    <input type="checkbox" id="" name="" checked>
+    <label for="">Rosas</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Lotus</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Girasol</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Conna</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Tulipan</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Trébol</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Geranio</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Ortencias</label><br>
+    <input type="checkbox" id="" name="" checked>
+    <label for="">Ballenas</label><br>
+    <input type="checkbox" id="" name="" checked>
+    <label for="">Delfines</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Pez Payaso</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Mantarrayas</label><br>
+    <input type="checkbox" id="" name="" checked>
+    <label for="">Tiburones</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Algas</label><br>
+    <input type="checkbox" id="" name="" checked>
+    <label for="">Caballo de mar</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Estrella de mar</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Medusas</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Leones Marinos</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Focas</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Iceberg</label><br>
+    <input type="checkbox" id="" name="" checked>
+    <label for="">Pingüinos</label><br>
+    <input type="checkbox" id="" name="" checked>
+    <label for="">Pandas</label><br>
+    <input type="checkbox" id="" name="" checked>
+    <label for="">Oso Polar</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Lobos</label><br>
+    <input type="checkbox" id="" name="" checked>
+    <label for="">Focas polares</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Puma</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Morsa</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Harry Potter</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Hamlet</label><br>
+    <input type="checkbox" id="" name="">
+    <label for="">Don Quijote de la Macha</label><br>
+
+
+
+    <table style="width: 500px;">
+
+        <thead>
+
+            <tr>
+
+                <th>Producto</th>
+
+                <th>Precio</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>Harina Normal</td>
+
+                <td>$100</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Harina Integral</td>
+
+                <td>$250</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Chcoloate</td>
+
+                <td>$50</td>
+
+            </tr>
+
+            <tr>
+
+                <td>fresa</td>
+
+                <td>$50</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Rosas</td>
+
+                <td>$40</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Ortencias</td>
+
+                <td>90</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Ballenas</td>
+
+                <td>$100</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Delfines</td>
+
+                <td>$100</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Tiburones</td>
+
+                <td>$100</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Focas polares</td>
+
+                <td>$100</td>
+
+            </tr>
+
+            <tr>
+
+                <td>caballo de mar</td>
+
+                <td>$70</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Pingüinos</td>
+
+                <td>$100</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Iceberg</td>
+
+                <td>$70</td>
+
+            </tr>
+
+            <tr>
+
+                <td>osos polares</td>
+
+                <td>$90</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Focas polares</td>
+
+                <td>$70</td>
+
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+
+            <td></td>
+
+            <td>Total: $1,380.0</td>
+
+        </tfoot>
+
+    </table>
+
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta https-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pestelería</title>
+
+    <style>
+        * {
+            font-family: Georgia, Times New Roman, Times, serif;
+        }
+        
+        body {
+            background-color: rgb(150, 130, 168);
+        }
+        
+        p {
+            color: rgb(2, 2, 2);
+            text-align: left;
+        }
+        
+        #título {
+            color: rgb(rgb(78, 16, 73), rgb(121, 28, 184), rgb(100, 17, 110))
+        }
+        
+        .izquierda {
+            color: blueviolet;
+        }
+        
+        p.izquierda {
+            text-decoration: dotted;
+            text-align: justify;
+        }
+        
+        .contraste {
+            background-color: black;
+        }
+        
+        h1 {
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        img {
+            display: block;
+            margin: auto
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+    <h1>Diseña tu pestel</h1>
+
+    <form action="Diseñetupestel.js">
+
+        <input type="number" id="Pestel" name="Pestel" placeholder="¿Cuántos?">
+        <select name="Harina" id="Harina">
+            <option value="Normal">Normal</option>
+            <option value="Integral">Integral</option>
+            <option value="Veggies">Veggies</option>
+        </select>
+        <select name="Sabores" id="Sabores">
+            <option value="Chocolate">Chocolate</option>
+            <option value="Menta">Menta</option>
+            <option value="Fresa">Fresa</option>
+            <option value="Plátano">Plátano</option>
+            <option value="Napolitano">Napolitano</option>
+        </select>
+
+        <br><br>
+
+        <h3>Adornos</h3>
+        <input type="checkbox" id="Girasol" name="Girasol" value="Girasol">
+        <label for="Girasol">Girasol</label><br>
+        <input type="checkbox" id="Rosas" name="Rosas" value="Rosas">
+        <label for="Rosas">Rosas</label><br>
+        <input type="checkbox" id="Lotus" name="Lotus" value="Lotus">
+        <label for="Lotus">Lotus</label><br>
+        <input type="checkbox" id="Conna" name="Conna" value="Conna">
+        <label for="Conna">Conna</label><br>
+        <input type="checkbox" id="Tulipan" name="Tulipan" value="Tulipan">
+        <label for="Tulipan">Tulipan</label><br>
+        <input type="checkbox" id="Trébol" name="Trébol" value="Trébol">
+        <label for="Trébol">Trébol</label><br>
+        <input type="checkbox" id="Geranio" name="Geranio" value="Geranio">
+        <label for="Geranio">Geranio</label><br>
+        <input type="checkbox" id="Ortencias" name="Ortencias" value="Ortencias">
+        <label for="Ortencias">Ortencias</label><br>
+        <input type="checkbox" id="Ballenas" name="Ballenas" value="Ballenas">
+        <label for="Ballenas">Ballenas</label><br>
+        <input type="checkbox" id="Delfines" name="Delfines" value="Delfines">
+        <label for="Delfines">Delfines</label><br>
+        <input type="checkbox" id="Pez Payaso" name="Pez Payaso" value="Pez Payaso">
+        <label for="Pez Payaso">Pez Payaso</label><br>
+        <input type="checkbox" id="Mantarrayas" name="Mantarrayas" value="Mantarrayas">
+        <label for="Mantarrayas">Mantarrayas</label><br>
+        <input type="checkbox" id="Tiburones" name="Tiburones" value="Tiburones">
+        <label for="Tiburones">Tiburones</label><br>
+        <input type="checkbox" id="Algas" name="Algas" value="Algas">
+        <label for="Algas">Algas</label><br>
+        <input type="checkbox" id="Caballo de mar" name="Caballo de mar" value="Caballo de mar">
+        <label for="Caballo de mar">Caballo de mar</label><br>
+        <input type="checkbox" id="Estrella de mar" name="Estrella de mar" value="Estrella de mar">
+        <label for="Estrella de mar">Estrella de mar</label><br>
+        <input type="checkbox" id="Medusas" name="Medusas" value="Medusas">
+        <label for="Medusas">Medusas</label><br>
+        <input type="checkbox" id="Leones Marinos" name="Leones Marinos" value="Leones Marinos">
+        <label for="Leones Marinos">Leones Marinos</label><br>
+        <input type="checkbox" id="Focas" name="Focas" value="Focas">
+        <label for="Focas">Focas</label><br>
+        <input type="checkbox" id="Iceberg" name="Iceberg" value="Iceberg">
+        <label for="Iceberg">Iceberg</label><br>
+        <input type="checkbox" id="Pingüinos" name="Pingüinos" value="Pingüinos">
+        <label for="Pingüinos">Pingüinos</label><br>
+        <input type="checkbox" id="Oso Polar" name="Oso Polar" value="Oso Polar">
+        <label for="Oso Polar">Oso Polar</label><br>
+        <input type="checkbox" id="Lobos" name="Lobos" value="Lobos">
+        <label for="Lobos">Lobos</label><br>
+        <input type="checkbox" id="Puma" name="Puma" value="Puma">
+        <label for="Puma">Puma</label><br>
+        <input type="checkbox" id="Morsa" name="Morsa" value="Morsa">
+        <label for="Morsa">Morsa</label><br>
+        <input type="checkbox" id="Don Quijote de la Macha" name="Don Quijote de la Macha" value="Don Quijote de la Macha">
+        <label for="Don Quijote de la Macha">Don Quijote de la Macha</label><br>
+        <input type="checkbox" id="Harry Potter" name="Harry Potter" value="Harry Potter">
+        <label for="Harry Potter">Harry Potter</label><br>
+        <input type="checkbox" id="Hamlet" name="Hamlet" value="Hamlet">
+        <label for="Hamlet">Hamlet</label>
+
+
+    </form>
+
+    <p>¿Listo?</p>
+    <button type="button" onclick="alert('Pedido enviado');">Enviar Pedido</button>
+
+    <button type="reset">Borrar datos</button>
+
+
+
+</body>
+
+</html>
